@@ -1,0 +1,100 @@
+/*@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:100,100i,200,200i,300,400,500,600,700');
+body{
+    font-family: 'IBM Plex Sans', sans-serif !important;
+}*/
+.products {
+    background: #ddd;
+    position: relative;
+    padding-top: 80px;
+    padding-bottom: 60px;
+}
+.products div {
+    z-index: 2;
+}
+.products:before {
+    -webkit-clip-path: polygon(0 0, 65% 0, 55% 100%, 0% 100%);
+    clip-path: polygon(0 0, 65% 0, 55% 100%, 0% 100%);
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #000;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+}
+.product-left-wrapper {
+    padding-top: 5%;
+    padding-left: 0px;
+    z-index: 3 !important;
+}
+.product-left-wrapper span {
+    font-family: 'ROBOTO',sans-serif;
+    font-size: 72px;
+    font-weight: 100;
+    color: #777;
+    float: left;
+    line-height: 86px;
+    position: absolute;
+    left: 0;
+}
+.product-left-wrapper h4 {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-left: 90px;
+    width: 100%;
+    margin-bottom: 0px;
+}
+
+.product-left-wrapper h1 {
+    font-size: 48px;
+    font-weight: 100;
+    color: #fff;
+    padding-left: 85px;
+    width: 100%;
+}
+.product-left-wrapper img {
+    width: 125%;
+    height: auto;
+    margin-top: 10px;
+}
+
+.product-right-wrapper {
+    padding-top: 14%;
+    padding-right: 0px;
+}
+.product-right-wrapper span {
+    font-family: 'ROBOTO',sans-serif;
+    font-size: 72px;
+    font-weight: 100;
+    color: #111;
+    float: right;
+    line-height: 86px;
+    position: absolute;
+    right: 0;
+}
+.product-right-wrapper h4 {
+    color: #111;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-right: 85px;
+    width: 100%;
+    text-align: right;
+    margin-bottom: 0px;
+}
+.product-right-wrapper h1 {
+    font-size: 48px;
+    font-weight: 100;
+    color: #111;
+    text-align: right;
+    width: 100%;
+    padding-right: 85px;
+}
+.product-right-wrapper img {
+    width: 105%;
+    height: auto;
+    margin-top: 10px;
+}

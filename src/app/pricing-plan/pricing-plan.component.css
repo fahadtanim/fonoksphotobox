@@ -1,0 +1,208 @@
+.pricing-plan-wrapper{
+  background-color: black;
+  padding-top: 80px;
+  padding-bottom: 60px;
+}
+
+.particle-header{
+  background-color:#000;
+  z-index: 1;
+}
+
+#section-title-pricing-plan{
+  color: #e5e5e5;
+  font-size: 60px;
+  text-align: left;
+  font-weight: 100;
+  text-transform: lowercase;
+  padding-bottom: 8px;
+  padding-top: 8px;
+  width: 100%;
+  z-index: 1;
+}
+
+.section-title-bg{
+  height: 106px;
+  z-index: 0;
+  margin-top: -106px;
+}
+
+.section-title-bg div{
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.section-title-bg div::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #070707cc;
+}
+
+.pricing-plan-sub-header{
+  color: #575757;
+  background-color: #000;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0;
+  margin-top: 2em;
+}
+
+.pricing-plan-feature-header{
+  color: #e5e5e5;
+  background-color: #000;
+  font-size: 48px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.header-bottom-line{
+  background-color: #f75e50;
+  height: 1px;
+  width: 40px;
+  margin-left: 3px;
+}
+
+.pricing-plan-feature-content{
+  color:#878787;
+  margin-top:2em;
+}
+
+.pricing-plan-feature-boyan{
+  padding-left: 0px;
+}
+
+.skill-item{
+  padding-top: 15px;
+}
+
+.skill-item-header{
+  font-weight: 600;
+  font-size: 14px;
+  text-align: left;
+  text-transform: uppercase;
+  line-height: 100%;
+  margin-bottom:5px;
+}
+
+.skill-item-amount{
+  font-family: 'ROBOTO',sans-serif;
+  font-size:16px;
+  font-weight:600;
+  line-height: 100%;
+  margin-bottom: 5px;
+}
+
+.skill-item-bar-wrapper{
+  height: 2px;
+  border:1px;
+  border-radius: 1px;
+  background-color: #e5e5e5;
+  width: 100%;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.skill-item-bar{
+  height: 100%;
+  background-color: #f75e50;
+}
+
+.price-box{
+  box-shadow: 0px 0px 1px #575757;
+}
+
+.pricing-title-container{
+  box-shadow: 0px 0px 1px #575757;
+}
+
+.price-tag{
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.price-tag::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #070707cc;
+}
+
+.pricing-plan-category-header{
+  font-family: 'ROBOTO',sans-serif;
+  color: #f75e50;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+  padding-top: 15px;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+.pricing-plan-price{
+  font-family: 'ROBOTO',sans-serif;
+  color:#e5e5e5;
+  font-size: 60px;
+}
+
+.pricing-plan-price span{
+  color: #f75e50;
+  font-size: 20px;
+}
+
+.pricing-details{
+  padding-top: 15px;
+  padding-bottom: 15px;
+  box-shadow: 0px 0px 1px #575757;
+}
+
+.pricing-details-text{
+  color: #878787;
+  margin-bottom: 5px;
+}
+
+.pricing-details-text-bar{
+  width: 30px;
+  height: 1px;
+  border: 1px;
+  border-radius: 1px;
+  background-color: #f75e50;
+}
+
+.pricing-details-end{
+  margin-bottom: 15px;
+}
+
+.pricing-plan-button-wrapper{
+  box-shadow: 0px 0px 1px #575757;
+}
+
+.pricing-plan-order-button{
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color:#222;
+  color: #f75e50;
+  text-align: center;
+  text-transform: uppercase;
+  border: 0px;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 1px;
+  transition: 0.7s;
+}
+
+.pricing-plan-order-button:hover{
+  background-color:#f75e50;
+  color: #e5e5e5;
+}
+

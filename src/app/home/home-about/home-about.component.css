@@ -1,0 +1,95 @@
+.home-about-container{
+  height: 100vh;
+  background: url("../../../assets/images/bg-about-me.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.home-about-parts-container{
+  height: 100vh;
+}
+
+.home-about-greetings{
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.home-about-name{
+  color:#F5F5F5;
+}
+
+.home-about-name-dummy{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 100%;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 0px;
+}
+
+
+/*Home Name Section*/
+.home-about-name-main{
+  font-family: 'Staatliches', cursive;
+  font-size: 48px;
+  letter-spacing: 3px;
+  line-height: 100%;
+  color: #F5F5F5;
+}
+
+.home-about-details{
+  color: #7d7769;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.home-about-designation{
+  color: #9b9381;
+  font-size: 12px;
+  font-weight: 700;
+  /* font-family: 'Oswald',sans-serif; */
+  letter-spacing: 2px;
+}
+
+
+/*Home Icons Section*/
+.home-about-icon{
+  height: 38px;
+  width: 38px;
+  margin-right: 25px;
+}
+
+.home-about-icon-counter{
+  font-size: 48px;
+  font-weight: 100;
+  font-family: 'Roboto', sans-serif;
+}
+
+.home-about-icon-details {
+  font-size: 12px;
+  line-height: 15px;
+  color: #7d7769;
+}
+
+/*Home Signature Section*/
+.home-about-signature {
+  margin-top: 50px;
+}
+
+p.home-about-signature-title {
+  color: #636363;
+  font-size: 11px;
+  line-height: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #636363;
+  padding-bottom: 6px;
+  padding-right: 20px;
+}
+
+img.home-about-signature-image {
+  margin-left: 25px;
+  height: 90px;
+}

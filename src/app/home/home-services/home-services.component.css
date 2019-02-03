@@ -1,0 +1,29 @@
+.home-service-wrapper{
+  background-color: #000;
+}
+
+.home-service-container{
+  height: 100vh;
+}
+
+.home-service-logo-wrapper{
+  height: 40px;
+  margin-bottom: 15px
+}
+
+.home-service-logo-wrapper img{
+  height: 40px;
+  width: 40px;
+}
+
+.home-service-title-wrapper h6{
+  color: #e5e5e5;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.home-service-details-wrapper p{
+  width: 80%;
+  color:#878787;
+  font-size: 14px;
+}

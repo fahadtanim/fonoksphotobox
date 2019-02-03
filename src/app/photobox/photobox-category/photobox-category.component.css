@@ -1,0 +1,182 @@
+/*########################      Photobox Slider      ##################################*/
+
+
+.photobox-slider{
+  position: fixed;
+  top:0;
+  left: 0;
+  width: 16.666666%;
+  height: 100%;
+  background-color: #000;
+}
+
+.photobox-slider ul{
+  padding: 100px 15px;
+}
+.photobox-slider ul li{
+  padding: 1em;
+  background-color: #23282d;
+  cursor: pointer;
+  border-top: 1px solid #333232;
+  border-bottom: 1px solid #333232;
+}
+
+.photobox-slider ul li a{
+  color: #fff;
+}
+
+.photobox-slider ul li a:hover{
+  color: #f75e50;
+}
+
+
+.slider{
+  width: 100%;
+  background-color: blue;
+  position: relative;
+  display: block;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-origin: border-box;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+.slider:before{
+  content: "";
+  display: block;
+  width: 100%;
+  padding-bottom: 56.25%;
+}
+
+.slider > img{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.photo-grid-container{
+  display: grid;
+  width: 100%;
+  background-color: #FF5252;
+  /*grid-template-columns: repeat(auto-fill, 8.316531vw);
+  grid-auto-rows: 8.316531vw;*/
+  grid-template-columns: repeat(auto-fill, 8.242%);
+  grid-auto-rows: 8.205vw;
+  grid-gap: 0.1%;
+}
+
+.photo-grid-container > div:nth-child(odd){
+  background-color: black;
+  color: #fff;
+}
+.photo-grid-container > div:nth-child(even){
+  background-color: #eee;
+  color: #000;
+}
+
+.photo{
+  background: 0%;
+}
+.photo-grid-container > div:nth-child(1){
+  grid-row-start: 1;
+  grid-column-start: 1;
+}
+
+.photo-grid-container > .photo-square{
+  position: relative;
+  grid-row: auto/span 4;
+  grid-column: auto/ span 4;
+}
+
+.photo-grid-container > .photo-tall{
+  position: relative;
+  grid-row: auto/span 8;
+  grid-column: auto/ span 4;
+}
+
+.photo-grid-container > .photo-wide{
+  position: relative;
+  grid-row: auto/span 4;
+  grid-column: auto/ span 8;
+  background-color: #878787;
+}
+
+.photo-grid-container > .photo-fat{
+  position: relative;
+  grid-row: auto/span 8;
+  grid-column: auto/ span 6;
+  background-color: #878787;
+}
+
+.photo-grid-container > .photo-medium{
+  position: relative;
+  grid-row: auto/span 4;
+  grid-column: auto/ span 6;
+  background-color: #878787;
+}
+
+.photo-grid-box{
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+
+.photo-grid-box > .photo-container{
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-origin: border-box;
+  background-position-x: center;
+  background-position-y: center;
+  cursor: pointer;
+  transition: 0.75s;
+}
+
+.photo-grid-box > .photo-container-overlay{
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  transition: 0.75s;
+  opacity: 0;
+}
+
+.photo-grid-box > .photo-container-overlay .photo-view-icon{
+  align-self: center;
+  opacity: 0;
+  transition: 0.75s;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 60%;
+  padding: 20px;
+  font-size: 1.5em;
+}
+
+
+.photo-grid-box:hover .photo-container-overlay{
+  position: absolute;
+  top:0px;
+  left:0px;
+  opacity: 1;
+}
+
+.photo-grid-box:hover .photo-container{
+  filter: blur(2px) grayscale(100%);
+}
+
+.photo-grid-box:hover .photo-container-overlay .photo-view-icon{
+  opacity: 0.4;
+
+}
+
+.photo-view-icon:hover{
+  color: #f75e50;
+}

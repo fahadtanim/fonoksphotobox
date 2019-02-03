@@ -26,7 +26,7 @@ export class PricingPlanComponent implements OnInit, OnDestroy {
     document.getElementById('particle-container').style.marginTop = '-' + height + 'px';*/
   }
   ngOnDestroy() {
-    console.log('pricing-plan destroyed');
+    // console.log('pricing-plan destroyed');
 
   }
 }

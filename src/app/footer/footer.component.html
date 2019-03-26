@@ -1,0 +1,247 @@
+<div class="container-fluid">
+  <div class = "row footer-wrapper">
+    <div class="container">
+      <div class="row footer-container justify-space-around">
+        <!--First Boyans-->
+        <div class="col-12 content-center">
+          <div class="row justify-center">
+            <h1 class="footer-header-time primary-white-color">Now</h1>
+          </div>
+          <div class="row justify-center">
+            <p class="footer-project-availability primary-white-color">We are taking new <strong class="primary-red-color">projects</strong></p>
+          </div>
+          <div class="row justify-center footer-service-fapor">
+            <p class="footer-project-fapor primary-white-color">Do you want any kind of services <strong class="primary-red-color">?</strong></p>
+          </div>
+        </div>
+        <!--Line Animation Boxes-->
+        <div class="col-12 content-center">
+          <div class="row justify-center">
+            <p class="primary-red-color footer-project-fapor-v2">Then</p>
+          </div>
+          <div class="row justify-center">
+            <span class="footer-line-animation-box"></span>
+          </div>
+          <div class="row justify-center footer-contact-button">
+            <a [routerLink]="['/ContactUs']" routerLinkActive="router-link-active" class = "red-button-class">Contact Us</a>
+          </div>
+        </div>
+        <!--OR-->
+        <div class="col-12 content-center">
+          <div class="row justify-center">
+            <h1 class="footer-or primary-white-color">or</h1>
+          </div>
+        </div>
+        <!--Discovery-->
+        <div class="col-12 content-center">
+          <div class="row justify-center">
+            <h1 class="footer-fapor-discover primary-red-color">discover more on</h1>
+          </div>
+        </div>
+        <!--Social Icon-->
+        <div class="col-12 content-center">
+          <div class="row justify-center footer-social-icon-wrapper">
+            <div class="footer-social-icon-holder">
+                <i class="fab fa-facebook-f footer-social-icon"></i>
+            </div>
+            <div class="footer-social-icon-holder">
+                <i class="fab fa-instagram footer-social-icon"></i>
+            </div>
+            <div class="footer-social-icon-holder">
+                <i class="fab fa-google-plus-g footer-social-icon"></i>
+            </div>
+            <div class="footer-social-icon-holder">
+                <i class="fab fa-twitter footer-social-icon"></i>
+            </div>
+          </div>
+        </div>
+        <!--Footer Menu-->
+        <div class="col-12 content-center">
+          <div class="row justify-space-around footer-social-menu-wrapper">
+            <a [routerLink]="['/home']" routerLinkActive="router-link-active" class="footer-menu-item"  >Home</a>
+            <a [routerLink]="['/Photobox']" routerLinkActive="router-link-active" class="footer-menu-item"  >Photobox</a>
+            <a [routerLink]="['/Services']" routerLinkActive="router-link-active" class="footer-menu-item"  >Services</a>
+            <a [routerLink]="['/Pricing Plan']" routerLinkActive="router-link-active" class="footer-menu-item"  >Pricing Plan</a>
+            <a [routerLink]="['/Contact']" routerLinkActive="router-link-active" class="footer-menu-item"  >Contact</a>
+            <a [routerLink]="['/AboutUs']" routerLinkActive="router-link-active" class="footer-menu-item"  >About Us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Bottom Footer-->
+    <div class="container-fluid primary-white-color footer-bottom">
+      <!--Carosell-->
+      <div class="row footer-carosel-container">
+        <div class="container-fluid">
+          <div class="row carosell-section-wrapper">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="carosell-container-wrapper container-fluid">
+                  <div class="carosell-box">
+                    <div id="carosell-container">
+                        <div class="carosell" style="background-image:url('../../../assets/images/bg-about-me.jpg')"></div>
+                        <div class="carosell" style="background-image:url('../../../assets/images/swift-sunglass.jpg')"></div>
+                        <div class="carosell" style="background-image:url('../../assets/images/dessert.PNG')"></div>
+                        <div class="carosell" style="background-image:url('../../assets/images/monster.PNG')"></div>
+                        <div class="carosell" style="background-image:url('../../assets/images/pringles.PNG')"></div>
+                        <div class="carosell" style="background-image:url('../../assets/images/sunglass.PNG')"></div>
+                        <div class="carosell" style="background-image:url('../../../assets/images/bg-about-me.jpg')"></div>
+                        <div class="carosell" style="background-image:url('../../../assets/images/DSC_9777.jpg')"></div>
+                        <div class="carosell" style="background-image:url('../../../assets/images/DSC_9777.jpg')"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row carosell-dot-wrapper">
+                  <div class="container-fluid carosell-bubble">
+                      <div class="row justify-content-center">
+                          <span class="carosell-dot carosell-dot-active align-self-center" (click)="carosell.currentSlide(0)"></span>
+                          <span class="carosell-dot" (click)="carosell.currentSlide(1)"></span>
+                          <span class="carosell-dot" (click)="carosell.currentSlide(2)"></span>
+                      </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Bottom Footer-->
+    <div class="row footer-bottom-container">
+      <div class="container footer-bottom-wrapper">
+        <div class="row footer-bottom-container-row">
+          <div class="col-6 footer-bottom-copyright primary-white-color">
+            <div class="row content-center">
+              <p class="footer-copyright-text">	&copy; all right reserved by fonok's photobox </p>
+            </div>
+          </div>
+          <div class="col-6 footer-bottom-others">
+            <div class="row content-center">
+              <div class="col-6 text-right">
+                <a class="footer-bottom-link" href="#">terms of policies</a>
+              </div>
+              <div class="col-6 text-right">
+                <a class="footer-bottom-link" href="#">privacy policies</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+</div>
+
+
+<!--
+<div class="container-fluid footer-container-wrapper" >
+  <div class="row footer-container">
+    <div class="container content-center">
+      <div class="row content-center">
+        <h1 class="footer-header-time primary-white-color">Now</h1>
+      </div>
+
+
+      <div class="row justify-center">
+        <p class="footer-project-fapor primary-white-color">Do you want any kind of services <strong class="primary-red-color">?</strong></p>
+      </div>
+      <div class="row justify-center">
+        <p class="primary-red-color footer-project-fapor-v2">Then</p>
+      </div>
+      <div class="row justify-center">
+        <span class="footer-line-animation-box"></span>
+      </div>
+      <div class="row justify-center footer-contact-button">
+        <a [routerLink]="['/ContactUs']" routerLinkActive="router-link-active" class = "red-button-class">Contact Us</a>
+      </div>
+      <div class="row justify-center">
+        <h1 class="footer-or primary-white-color">or</h1>
+      </div>
+      <div class="row justify-center">
+        <h1 class="footer-fapor-discover primary-red-color">discover more on</h1>
+      </div>
+      <div class="row justify-center footer-social-icon-wrapper">
+        <div class="footer-social-icon-holder">
+            <i class="fab fa-facebook-f footer-social-icon"></i>
+        </div>
+        <div class="footer-social-icon-holder">
+            <i class="fab fa-instagram footer-social-icon"></i>
+        </div>
+        <div class="footer-social-icon-holder">
+            <i class="fab fa-google-plus-g footer-social-icon"></i>
+        </div>
+        <div class="footer-social-icon-holder">
+            <i class="fab fa-twitter footer-social-icon"></i>
+        </div>
+
+      </div>
+      <div class="row justify-space-around footer-social-menu-wrapper">
+        <a [routerLink]="['/home']" routerLinkActive="router-link-active" class="footer-menu-item"  >Home</a>
+        <a [routerLink]="['/Photobox']" routerLinkActive="router-link-active" class="footer-menu-item"  >Photobox</a>
+        <a [routerLink]="['/Services']" routerLinkActive="router-link-active" class="footer-menu-item"  >Services</a>
+        <a [routerLink]="['/Pricing Plan']" routerLinkActive="router-link-active" class="footer-menu-item"  >Pricing Plan</a>
+        <a [routerLink]="['/Contact']" routerLinkActive="router-link-active" class="footer-menu-item"  >Contact</a>
+        <a [routerLink]="['/AboutUs']" routerLinkActive="router-link-active" class="footer-menu-item"  >About Us</a>
+      </div>
+
+    </div>
+    <div class="container-fluid primary-white-color footer-bottom">
+      <div class="row footer-carosel-container">
+          <div class="col-2 footer-img-wrapper">
+            <div class="row footer-img-container">
+              <img class="footer-img" src="../../assets/images/pringles.PNG">
+            </div>
+          </div>
+          <div class="col-2  footer-img-wrapper">
+            <div class="row footer-img-container">
+              <img class="footer-img" src="../../assets/images/dessert.PNG">
+            </div>
+          </div>
+          <div class="col-2 footer-img-wrapper">
+            <div class="row footer-img-container">
+              <img class="footer-img" src="../../assets/images/shoe.PNG">
+            </div>
+          </div>
+          <div class="col-2 footer-img-wrapper">
+            <div class="row footer-img-container">
+              <img class="footer-img" src="../../assets/images/watch.PNG">
+            </div>
+          </div>
+          <div class="col-2 footer-img-wrapper">
+            <div class="row footer-img-container">
+              <img class="footer-img" src="../../assets/images/sunglass.PNG">
+            </div>
+          </div>
+          <div class="col-2 footer-img-wrapper">
+            <div class="row footer-img-container">
+              <img class="footer-img" src="../../assets/images/monster.PNG">
+            </div>
+          </div>
+        </div>
+      <div class="row footer-bottom-container">
+        <div class="container footer-bottom-wrapper">
+          <div class="row footer-bottom-container-row">
+            <div class="col-6 footer-bottom-copyright primary-white-color">
+              <div class="row content-center">
+                <p class="footer-copyright-text">	&copy; all right reserved by fonok's photobox </p>
+              </div>
+            </div>
+            <div class="col-6 footer-bottom-others">
+              <div class="row content-center">
+                <div class="col-6 text-right">
+                  <a class="footer-bottom-link" href="#">terms of policies</a>
+                </div>
+                <div class="col-6 text-right">
+                  <a class="footer-bottom-link" href="#">privacy policies</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  -->

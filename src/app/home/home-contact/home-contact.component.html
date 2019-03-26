@@ -1,0 +1,74 @@
+<div class="container-fluid home-section home-contact-wrapper" id='home-contact-whole-wrapper'>
+  <particles [style]="particleStyle" [params]="particleParams"></particles>
+  <div class="row home-contact-container" id = "home-contact">
+    <div class="container justify-center">
+      <div class="col-6 content-center home-contact-info-wrapper">
+        <div class="row">
+            <h3 class="home-contact-location">Our Office</h3>
+        </div>
+        <div class="row">
+          <p class="home-contact-address secondary-font">
+            51/1/E Manikaagar Pukur Par,<br>
+            Maniknagar, Mugda,<br>
+            Dhaka-1214<br>
+            Bangladesh<br>
+          </p>
+        </div>
+        <div class="row">
+          <div class="home-contact-address-details col-10">
+            <p class="row">
+                Our studio space is located in downtown San Luis
+                Obispo. right in the heart of Central Coast, CA.
+                Conveniently surrounded by some of the world’s most
+                talented craft producers. Come on by.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <h2 class="home-contact-info-title">
+            Contact Info
+          </h2>
+        </div>
+        <div class="row">
+          <p class="home-contact-info-details secondary-font">Call : +8801977515062</p>
+        </div>
+        <div class="row">
+          <p class="home-contact-info-details secondary-font">Email : info@fonoksphotobox.com</p>
+        </div>
+      </div>
+      <div class="col-6 content-center">
+        <div class="row">
+          <h3 class="home-contact-form">Drop Us A line</h3>
+        </div>
+        <div class="row">
+          <form class="container-fluid home-contact-main-form" [formGroup]="homeContactForm" (submit)="onSubmit()" >
+            <div class="row">
+              <div class="col-6">
+                <mat-form-field class="row category-form-input">
+                  <input  matInput placeholder="Full Name" id="home-contact-full-name-input" class="custom-input" name="fullName" formControlName="fullName" minlength="3" maxlength="50" required>
+                </mat-form-field>
+              </div>
+              <div class="col-6">
+                <mat-form-field class="row category-form-input">
+                  <input matInput placeholder="Email" id="home-contact-email-input" class="custom-input" formControlName="email">
+                </mat-form-field>
+              </div>
+              <div class="col-12">
+                <mat-form-field class="row category-form-input category-form-textarea">
+                  <textarea matInput placeholder="Message" id="home-contact-email-textarea" class="custom-input" formControlName="message"></textarea>
+                </mat-form-field>
+              </div>
+              <div class="col-4">
+                <div class="row input-submit">
+                  <input type = "submit" class="button-class secondary-font">
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+

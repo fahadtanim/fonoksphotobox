@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import {Router, Event, NavigationCancel, NavigationEnd, NavigationStart, NavigationError} from '@angular/router';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'fonoksphotobox';
+  showLoadingIndicator = true;
+  constructor( public _router: Router){
+    this._router.events.subscribe((_routerEvent: Event) =>{
+      if(_routerEvent instanceof NavigationStart){
+        this.showLoadingIndicator = true;
+      }
+      if(_routerEvent instanceof NavigationEnd || _routerEvent instanceof NavigationCancel || _routerEvent instanceof NavigationError){
+        this.showLoadingIndicator = false;
+      }
+    });
+  }
 }

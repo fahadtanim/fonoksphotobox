@@ -1,14 +1,67 @@
+
 .home-service-wrapper{
   background-color: #000;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-.home-service-container{
-  height: 100vh;
+.about-us-sub-header {
+  color: #575757;
+  background-color: #000;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 2em 0 0 15px;
 }
 
-.home-service-logo-wrapper{
+.about-us-feature-header {
+  color: #e5e5e5;
+  background-color: #000;
+  font-size: 48px;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-left: 15px;
+}
+
+.header-bottom-line {
+  background-color: #f75e50;
+  height: 1px;
+  width: 40px;
+  margin-left: 18px;
+  margin-bottom: 30px;
+}
+
+.home-service-box{
+  box-shadow: 0 0 1px #878787;
+  width: 100%;
+  padding-top: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 30px;
+}
+
+.home-service-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #070707cc;
+}
+
+.home-service-box-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  padding: 20% 15px 15px;
+}
+
+.home-service-logo-wrapper {
   height: 40px;
-  margin-bottom: 15px
+  margin-bottom: 15px;
 }
 
 .home-service-logo-wrapper img{
@@ -22,8 +75,9 @@
   font-weight: 700;
 }
 
-.home-service-details-wrapper p{
+.home-service-details-wrapper p {
   width: 80%;
-  color:#878787;
+  text-align: center;
+  color: #878787;
   font-size: 14px;
 }

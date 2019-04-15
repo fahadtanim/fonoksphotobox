@@ -1,5 +1,5 @@
 .home-about-container{
-  height: 100vh;
+  min-height: 100vh;
   background: url("../../../assets/images/bg-about-me.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -7,7 +7,7 @@
 }
 
 .home-about-parts-container{
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .home-about-greetings{

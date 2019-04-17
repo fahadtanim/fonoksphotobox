@@ -362,6 +362,12 @@ THE SOFTWARE.
 
 @angular/material/snack-bar
 
+@angular/material/icon
+
+@angular/material/sidenav
+
+@angular/material/list
+
 zone.js
 MIT
 The MIT License

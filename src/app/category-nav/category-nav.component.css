@@ -1,11 +1,42 @@
-header{
+.sidenav-container {
+  position: sticky;
+  top: 0px;
+  height: 100%;
+  background-color: #010101;
+}
+
+.sidenav {
+  width: 200px;
+}
+
+.sidenav .mat-toolbar {
+  background: inherit;
+  background-color: #010101;
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0px;
+  z-index: 1;
+}
+.mat-drawer.mat-drawer-side {
+  background-color: #010101;
+  color:#fff;
+}
+.mat-toolbar-single-row {
+  background-color: #010101;
+}
+
+.header-bar{
+  position: sticky;
   top:0;
   height: 100%;
   width: 100%;
   z-index: 30;
 }
 
-header::before{
+.header-bar::before{
   content: "";
   position: absolute;
   top: 0;
@@ -58,4 +89,9 @@ nav{
 
 .fonok-menubar li a.router-link-active{
   color:#f75e50;
+}
+
+.mat-button-ripple-round:focus{
+  border: none;
+  outline: none;
 }

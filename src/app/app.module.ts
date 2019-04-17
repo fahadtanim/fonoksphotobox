@@ -32,6 +32,9 @@ import { ParticlesModule } from 'angular-particle';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { ServicesComponent } from './services/services.component';
 import { Services2Component } from './services2/services2.component';
+import { CategoryNavComponent } from './category-nav/category-nav.component';
+import { LayoutModule } from '@angular/cdk/layout';
+import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule } from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -56,7 +59,8 @@ import { Services2Component } from './services2/services2.component';
     AboutUsComponent,
     ContactUsComponent,
     ServicesComponent,
-    Services2Component
+    Services2Component,
+    CategoryNavComponent
   ],
   imports: [
     BrowserModule,
@@ -65,7 +69,13 @@ import { Services2Component } from './services2/services2.component';
     ReactiveFormsModule,
     BrowserAnimationsModule,
     MaterialModule,
-    ParticlesModule
+    ParticlesModule,
+    LayoutModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatSidenavModule,
+    MatIconModule,
+    MatListModule
   ],
   providers: [
     CategoryService,

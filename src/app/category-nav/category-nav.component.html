@@ -1,0 +1,52 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport="true"
+      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+      [mode]="(isHandset$ | async) ? 'over' : 'side'"
+      [opened]="false">
+    <mat-toolbar>Menu</mat-toolbar>
+    <mat-nav-list>
+      <a mat-list-item href="#">Link 1</a>
+      <a mat-list-item href="#">Link 2</a>
+      <a mat-list-item href="#">Link 3</a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar class="header-bar">
+      <div class="row">
+        <div class="col-1">
+          <button color='primary'
+            type="button"
+            aria-label="Toggle sidenav"
+            mat-icon-button
+            (click)="drawer.toggle()"
+            *ngIf="true">
+            <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+          </button>
+        </div>
+      </div>
+      <div class="col-11">
+        <div class="container header">
+          <div class="row justify-center header-content-wrapper">
+            <div class="col-3 content-center">
+              <div class="row header-logo-wrapper">
+                <a [routerLink]="['/home']" routerLinkActive="router-link-active" class="fonok-logo" style="background-image: url('./assets/images/signature.png')"></a>
+              </div>
+            </div>
+            <nav class="col-9 content-center">
+              <ul class="fonok-menubar row">
+                <li class="col"><a routerLink="/home" routerLinkActive="router-link-active" >home</a></li>
+                <li class="col"><a routerLink="/photobox" routerLinkActive="router-link-active" >photobox</a></li>
+                <li class="col"><a routerLink="/services" routerLinkActive="router-link-active" >services</a></li>
+                <li class="col"><a routerLink="/pricingPlan" routerLinkActive="router-link-active">pricing plan</a></li>
+                <li class="col"><a routerLink="/aboutUs" routerLinkActive="router-link-active" >about us</a></li>
+                <li class="col"><a routerLink="/contactUs" routerLinkActive="router-link-active">contact us</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </mat-toolbar>
+    <!-- Add Content Here -->
+    <ng-content></ng-content>
+  </mat-sidenav-content>
+</mat-sidenav-container>

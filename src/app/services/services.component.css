@@ -1,7 +1,7 @@
 .photobox-section-wrapper{
   background-color: #010101;
   min-height: 100vh;
-  z-index:-1;
+  z-index:0;
 }
 
 .photobox-section-container{

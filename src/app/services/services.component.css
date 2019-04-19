@@ -56,21 +56,21 @@
   background: rgba(0,0,0,0.3);;
 }
 
-.sub-header {
+.service-sub-header {
   color: #575757;
   background-color: #000;
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
-  margin: 2em 0 0;
 }
 
-.feature-header {
+.service-feature-header {
   color: #e5e5e5;
   background-color: #000;
   font-size: 48px;
   font-weight: 700;
   text-transform: capitalize;
+  margin:0px;
 }
 
 .header-bottom-line {

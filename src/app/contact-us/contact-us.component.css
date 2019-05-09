@@ -1,0 +1,14 @@
+.contact-us-wrapper{
+  background-color: #010101;
+  color: #ffffff;
+  padding-top: 120px;
+}
+
+.contact-phone-number{
+  color: #fff;
+  transition: 0.3s;
+}
+
+.contact-phone-number:hover{
+  color: #f75e50;
+}

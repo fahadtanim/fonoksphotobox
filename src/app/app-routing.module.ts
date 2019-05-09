@@ -10,6 +10,7 @@ import { PricingPlanComponent } from './pricing-plan/pricing-plan.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { ServicesComponent } from './services/services.component';
 import { Services2Component } from './services2/services2.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
 const routes: Routes = [
     { path: '', redirectTo: '/home', pathMatch: 'full' },
     { path: 'home', component: HomeComponent },
@@ -17,8 +18,9 @@ const routes: Routes = [
     { path: 'categories', component: CategoriesComponent },
     { path: 'photobox', component: PhotoboxComponent },
     { path: 'photobox/:photoboxCategory', component: PhotoboxCategoryComponent },
-    { path: 'pricingPlan', component: PricingPlanComponent },
-    { path: 'aboutUs', component: AboutUsComponent },
+    { path: 'pricingplan', component: PricingPlanComponent },
+    { path: 'aboutus', component: AboutUsComponent },
+    { path: 'contactus', component: ContactUsComponent },
     { path: 'services', component: ServicesComponent },
     { path: 'services2', component: Services2Component }
 ];

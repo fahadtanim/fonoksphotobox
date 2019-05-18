@@ -1,3 +1,12 @@
+@import url("../../assets/css/animate.css"); 
+@import url("../../assets/css/animsition.min.css"); 
+@import url("../../assets/css/select2.css"); 
+@import url("../../assets/css/util.css"); 
+@import url("../../assets/css/main.css"); 
+@import url("../../assets/css/font-awesome.min.css"); 
+@import url("../../assets/css/hamburgers.min.css"); 
+@import url("../../assets/css/daterangepicker.css"); 
+@import url("../../assets/css/icon-font.min.css"); 
 .contact-us-wrapper{
   background-color: #010101;
   color: #ffffff;
@@ -11,4 +20,24 @@
 
 .contact-phone-number:hover{
   color: #f75e50;
+}
+
+.contact-info-holder{
+  margin-bottom: 30px;
+
+}
+
+.message-form-holder{
+  padding-right: 25px;
+}
+
+.container-contact100{
+  background-color: #010101;
+  z-index: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.lnr-map-marker:before {
+  content: "\e833";
 }

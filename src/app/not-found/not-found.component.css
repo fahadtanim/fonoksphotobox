@@ -1,0 +1,28 @@
+.not-found-wrapper{
+  background-color: #010101;
+  color:#e5e5e5;
+}
+
+.not-found-content{
+  margin-top: -80px;
+  height: 100vh;
+}
+
+.not-found-wrapper h1{
+  font-size: 20vw;
+  color: #f75e50;
+  text-align: center;
+}
+
+.not-found-wrapper h6{
+  font-size: 2vw;
+  text-align: center;
+}
+
+.not-found-content{
+  height: 100vh;
+}
+
+.particle-wrapper{
+  margin-top: -100vh;
+}

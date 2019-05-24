@@ -35,6 +35,8 @@ import { Services2Component } from './services2/services2.component';
 import { CategoryNavComponent } from './category-nav/category-nav.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule } from '@angular/material';
+import { PhotoboxNavComponent } from './photobox-nav/photobox-nav.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -60,7 +62,9 @@ import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, Mat
     ContactUsComponent,
     ServicesComponent,
     Services2Component,
-    CategoryNavComponent
+    CategoryNavComponent,
+    PhotoboxNavComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,

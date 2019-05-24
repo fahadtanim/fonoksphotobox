@@ -1,12 +1,28 @@
 .sidenav-container {
   position: sticky;
   top: 0px;
-  height: 100%;
+  bottom: 0px;
   background-color: #010101;
 }
 
 .sidenav {
   width: 200px;
+  height: 80px;
+  background-color: #010101;
+  color: #e5e5e5;
+}
+mat-nav-list a{
+  color: #e5e5e5;
+  cursor: pointer;
+  font-family: 'Poiret One', cursive;
+  color: #e5e5e5;
+  transition:0.3s;
+}
+.mat-sidenav-content{
+  height: 80px;
+}
+mat-nav-list a:hover{
+  color:#f75e50;
 }
 
 .sidenav .mat-toolbar {

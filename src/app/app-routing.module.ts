@@ -11,6 +11,7 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { ServicesComponent } from './services/services.component';
 import { Services2Component } from './services2/services2.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 const routes: Routes = [
     { path: '', redirectTo: '/home', pathMatch: 'full' },
     { path: 'home', component: HomeComponent },
@@ -22,7 +23,8 @@ const routes: Routes = [
     { path: 'aboutus', component: AboutUsComponent },
     { path: 'contactus', component: ContactUsComponent },
     { path: 'services', component: ServicesComponent },
-    { path: 'services2', component: Services2Component }
+    { path: 'services2', component: Services2Component },
+    { path: '**', component: NotFoundComponent},
 ];
 
 @NgModule({

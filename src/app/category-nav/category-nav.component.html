@@ -1,30 +1,38 @@
 <mat-sidenav-container class="sidenav-container">
-  <mat-sidenav #drawer class="sidenav" fixedInViewport="true"
-      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
-      [mode]="(isHandset$ | async) ? 'over' : 'side'"
-      [opened]="false">
-    <mat-toolbar>Menu</mat-toolbar>
+    <mat-sidenav #drawer class="sidenav" fixedInViewport="true"
+    [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+    [mode]="(isHandset$ | async) ? 'over' : 'side'"
+    [opened]="(isHandset$ | async)">
+    <mat-toolbar>
+        <div class="row header-logo-wrapper">
+          <a [routerLink]="['/home']" routerLinkActive="router-link-active" class="fonok-logo" style="background-image: url('./assets/images/signature.png')"></a>
+        </div>
+    </mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item href="#">Link 1</a>
-      <a mat-list-item href="#">Link 2</a>
-      <a mat-list-item href="#">Link 3</a>
+        <a mat-list-item routerLink="/home" routerLinkActive="router-link-active" >home</a>
+        <a mat-list-item routerLink="/photobox" routerLinkActive="router-link-active" >photobox</a>
+        <a mat-list-item routerLink="/services" routerLinkActive="router-link-active" >services</a>
+        <a mat-list-item routerLink="/pricingplan" routerLinkActive="router-link-active">pricing plan</a>
+        <a mat-list-item routerLink="/aboutus" routerLinkActive="router-link-active" >about us</a>
+        <a mat-list-item routerLink="/contactus" routerLinkActive="router-link-active">contact us</a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
+
     <mat-toolbar class="header-bar">
       <div class="row">
         <div class="col-1">
-          <button color='primary'
+            <button color ="primary"
             type="button"
             aria-label="Toggle sidenav"
             mat-icon-button
             (click)="drawer.toggle()"
-            *ngIf="true">
+            *ngIf="isHandset$ | async">
             <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
           </button>
         </div>
       </div>
-      <div class="col-11">
+      <div class="col-11" *ngIf="!(isHandset$ | async)">
         <div class="container header">
           <div class="row justify-center header-content-wrapper">
             <div class="col-3 content-center">

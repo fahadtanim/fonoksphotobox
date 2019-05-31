@@ -354,6 +354,12 @@ THE SOFTWARE.
 
 @angular/material/card
 
+@angular/material/icon
+
+@angular/material/sidenav
+
+@angular/material/list
+
 @angular/material/bottom-sheet
 
 @angular/material/dialog
@@ -361,12 +367,6 @@ THE SOFTWARE.
 @angular/material/datepicker
 
 @angular/material/snack-bar
-
-@angular/material/icon
-
-@angular/material/sidenav
-
-@angular/material/list
 
 zone.js
 MIT

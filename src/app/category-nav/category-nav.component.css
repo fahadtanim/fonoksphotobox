@@ -5,6 +5,9 @@
   background-color: #010101;
 }
 
+.main-nav{
+  z-index: 1003;
+}
 .sidenav {
   width: 200px;
   height: 80px;

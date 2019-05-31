@@ -1,6 +1,6 @@
 .sidenav-container {
-  z-index: -1;
   height: 100%;
+  overflow: hidden;
 }
 
 .sidenav {
@@ -19,4 +19,69 @@
 
 .photobox-nav{
   top:80px !important;
+  max-width: 10vw;
+  min-width: 300px;
+  background-color: #010101;
+}
+
+.mat-toolbar{
+  color:#e5e5e5!important;
+  font-family: 'Poiret One', cursive;
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+
+.side-bar-menu{
+  min-width: 200px;
+  max-width: 250px;
+  padding:0px;
+  box-shadow: none;
+
+}
+
+.sidebar-menus{
+  width:100%;
+  color: #e5e5e5;
+  text-decoration: none;
+  padding-top:10px;
+  padding-bottom: 10px;
+  transition: 0.7s;
+
+}
+.sidebar-menus-icon svg{
+  color: #e5e5e5;
+  height: 38px;
+  width: 38px;
+}
+.sidebar-menus-icon svg:hover{
+  color: #f75e50;
+}
+.sidebar-menus-title{
+  color: #e5e5e5;
+}
+.sidebar-menus:hover{
+    color: #f75e50;
+}
+.sidebar-menus-title:hover{
+  color: #f75e50;
+}
+
+
+.mat-expansion-panel:not([class*='mat-elevation-z']) {
+  box-shadow: none;
+  color: #e5e5e5;
+  background-color:#010101;
+}
+
+.mat-list-item{
+  color: #e5e5e5;
+
+}
+.mat-list-item span{
+  font-family: 'Poiret One', cursive;
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+.mat-list-item:hover{
+  color: #f75e50;
 }

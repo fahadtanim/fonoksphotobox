@@ -1,66 +1,173 @@
-/*########################      Photobox Slider      ##################################*/
-
-
-.photobox-slider{
-  position: fixed;
-  top:0;
-  left: 0;
-  width: 16.666666%;
-  height: 100%;
-  background-color: #000;
+#slider-container{
+  background-color: #222;
 }
-
-.photobox-slider ul{
-  padding: 100px 15px;
+.slider-container-wrapper{
+  overflow:hidden;
+  height: 100vh;
+  width: 100vw;
+  background-color: #222;
 }
-.photobox-slider ul li{
-  padding: 1em;
-  background-color: #23282d;
-  cursor: pointer;
-  border-top: 1px solid #333232;
-  border-bottom: 1px solid #333232;
+.slider-box{
+  margin-left: -15px;
+  margin-right: -15px;
 }
-
-.photobox-slider ul li a{
-  color: #fff;
-}
-
-.photobox-slider ul li a:hover{
-  color: #f75e50;
-}
-
-
 .slider{
-  width: 100%;
-  background-color: blue;
   position: relative;
-  display: block;
+  float: left;
+  width: 100vw;
+  height:100vh;
+  padding-bottom:15px;
+  transition:1s;
+  background-color: #222;
+  transition-timing-function: cubic-bezier(.79,.12,.4,1.03);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin-left: 0px;
+}
+
+.slider-bubble{
+  padding-top:10px;
+  padding-bottom:10px;
+}
+
+.dot-wrapper{
+  margin-top: -2.25em;
+}
+.dot{
+  cursor: pointer;
+  height: 0.5em;
+  width: 0.5em;
+  opacity: 0.5;
+  margin: 0 4px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.dot:hover{
+  background-color:#717171;
+}
+
+.active{
+  background-color:#717171;
+}
+
+
+.photobox-section-wrapper{
+  background-color: #010101;
+  min-height: 100vh;
+}
+
+.photobox-section-container{
+  min-height: 100vh;
+  padding-top: 120px;
+}
+
+.photobox-section-container:before, .photobox-section-container:after {
+  content: "";
+  position: absolute;
+  top: 120px;
+  bottom: 0;
+  width: 1px;
+  background: #575757;
+  z-index: 0;
+}
+
+.photobox-section-container:before {
+  left: 33.33%;
+}
+
+.photobox-section-container:after {
+  right: 33.33%;
+}
+
+.photobox-category-section-wrapper{
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+.photobox-gallery-boyan{
+  z-index: 1;
+  background-color: #010101;
+}
+
+.photobox-gallery-img{
+  padding-bottom:80%;
+  background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-origin: border-box;
-  background-position-x: center;
-  background-position-y: center;
+  z-index: 1;
+  box-shadow: 0 0 1px #575757;
 }
 
-.slider:before{
-  content: "";
-  display: block;
-  width: 100%;
-  padding-bottom: 56.25%;
-}
-
-.slider > img{
+.photobox-gallery-img::before{
+  content: " ";
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
+  bottom: 0;
   width: 100%;
-  height: 100%;
+  background: rgba(0,0,0,0.3);;
+}
+
+.sub-header {
+  color: #575757;
+  background-color: #000;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 2em 0 0;
+}
+
+.feature-header {
+  color: #e5e5e5;
+  background-color: #000;
+  font-size: 48px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.header-bottom-line {
+  background-color: #f75e50;
+  height: 1px;
+  width: 40px;
+  margin-left: 3px;
+}
+
+.photobox-boyan {
+  padding-top: 15px;
+  color: #878787;
+  font-weight: 300;
+  line-height: 30px;
+}
+.photobox-img-basic-gallery{
+  padding-top:60px;
+}
+.square-img-box{
+  padding-bottom:100%;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 1;
+  box-shadow: 0 0 1px #575757;
+}
+
+.photo-square-grid{
+  padding-bottom:100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.photobox-container{
+  z-index: -1;
 }
 
 .photo-grid-container{
   display: grid;
   width: 100%;
-  background-color: #FF5252;
+  background-color: rgba(0,0,0,0.87);
   /*grid-template-columns: repeat(auto-fill, 8.316531vw);
   grid-auto-rows: 8.316531vw;*/
   grid-template-columns: repeat(auto-fill, 8.242%);
@@ -179,4 +286,9 @@
 
 .photo-view-icon:hover{
   color: #f75e50;
+}
+
+.mat-paginator-outer-container .mat-paginator-container{
+  background-color: #010101;
+  color: #878787;
 }

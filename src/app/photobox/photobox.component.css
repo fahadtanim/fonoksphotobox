@@ -288,3 +288,7 @@
   color: #f75e50;
 }
 
+.mat-paginator-outer-container .mat-paginator-container{
+  background-color: #010101;
+  color: #878787;
+}

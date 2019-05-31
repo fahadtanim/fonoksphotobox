@@ -1,4 +1,4 @@
-<mat-sidenav-container class="sidenav-container">
+<mat-sidenav-container class="sidenav-container main-nav">
     <mat-sidenav #drawer class="sidenav" fixedInViewport="true"
     [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
     [mode]="(isHandset$ | async) ? 'over' : 'side'"
@@ -40,7 +40,7 @@
                 <a [routerLink]="['/home']" routerLinkActive="router-link-active" class="fonok-logo" style="background-image: url('./assets/images/signature.png')"></a>
               </div>
             </div>
-            <nav class="col-9 content-center">
+            <div class="col-9 content-center">
               <ul class="fonok-menubar row">
                 <li class="col"><a routerLink="/home" routerLinkActive="router-link-active" >home</a></li>
                 <li class="col"><a routerLink="/photobox" routerLinkActive="router-link-active" >photobox</a></li>
@@ -49,7 +49,7 @@
                 <li class="col"><a routerLink="/aboutus" routerLinkActive="router-link-active" >about us</a></li>
                 <li class="col"><a routerLink="/contactus" routerLinkActive="router-link-active">contact us</a></li>
               </ul>
-            </nav>
+            </div>
           </div>
         </div>
       </div>

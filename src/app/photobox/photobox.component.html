@@ -1,9 +1,9 @@
+<app-photobox-nav>
+
 
 <div class="container-fluid">
     <div class="row">
-        <app-photobox-nav>
 
-          </app-photobox-nav>
       <div class="container-fluid photobox-banner">
           <div class="row">
               <div class="slider-container-wrapper container-fluid">
@@ -35,66 +35,85 @@
           <div class="photo-container" style="
           background-image: url('./assets/images/bg-about-me.jpg');">
           </div>
-          <div class="photo-container-overlay">
+          <!-- <div class="photo-container-overlay">
               <i class="far fa-eye photo-view-icon"></i>
-          </div>
+          </div> -->
         </div>
 
         <div class="photo-square photo-grid-box">
           <div class="photo-container" style="
           background-image: url('./assets/images/bg-about-me.jpg');">
           </div>
-          <div class="photo-container-overlay">
+          <!-- <div class="photo-container-overlay">
             <i class="far fa-eye photo-view-icon"></i>
-          </div>
+          </div> -->
         </div>
 
         <div class="photo-tall photo-grid-box">
           <div class="photo-container" style="
           background-image: url('./assets/images/bg-about-me.jpg');">
           </div>
-          <div class="photo-container-overlay">
+          <!-- <div class="photo-container-overlay">
             <i class="far fa-eye photo-view-icon"></i>
-          </div>
+          </div> -->
         </div>
 
         <div class="photo-wide photo-grid-box">
           <div class="photo-container" style="
           background-image: url('./assets/images/bg-about-me.jpg');">
           </div>
-          <div class="photo-container-overlay">
+          <!-- <div class="photo-container-overlay">
             <i class="far fa-eye photo-view-icon"></i>
-          </div>
+          </div> -->
         </div>
 
         <div class="photo-fat photo-grid-box">
           <div class="photo-container" style="
           background-image: url('./assets/images/bg-about-me.jpg');">
           </div>
-          <div class="photo-container-overlay">
+          <!-- <div class="photo-container-overlay">
             <i class="far fa-eye photo-view-icon"></i>
-          </div>
+          </div> -->
         </div>
 
         <div class="photo-medium photo-grid-box">
           <div class="photo-container" style="
           background-image: url('./assets/images/bg-about-me.jpg');">
           </div>
-          <div class="photo-container-overlay">
+          <!-- <div class="photo-container-overlay">
             <i class="far fa-eye photo-view-icon"></i>
-          </div>
+          </div> -->
         </div>
 
         <div class="photo-medium photo-grid-box">
           <div class="photo-container" style="
           background-image: url('./assets/images/bg-about-me.jpg');">
           </div>
-          <div class="photo-container-overlay">
+          <!-- <div class="photo-container-overlay">
             <i class="far fa-eye photo-view-icon"></i>
-          </div>
+          </div> -->
         </div>
 
       </div>
     </div>
+
+  </div>
+  <div class="container-fluid">
+    <mat-paginator class="row" [length]="length"
+                  [pageSize]="pageSize"
+                  [pageSizeOptions]="pageSizeOptions"
+                  [hidePageSize]="true"
+                  (page)="pageEvent = $event">
+    </mat-paginator>
+    <!-- <ul class="pagination">
+      <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+      <li class="active"><a href="#!">1</a></li>
+      <li class="waves-effect"><a href="#!">2</a></li>
+      <li class="waves-effect"><a href="#!">3</a></li>
+      <li class="waves-effect"><a href="#!">4</a></li>
+      <li class="waves-effect"><a href="#!">5</a></li>
+      <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+    </ul> -->
   </div>
   <app-footer></app-footer>
+</app-photobox-nav>

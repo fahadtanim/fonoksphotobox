@@ -1,92 +1,119 @@
-<!---<div class="photobox-slider">
-  <ul class="container-fluid">
-    <li class="row justify-center">
-      <a href="#" class="conten-center">bully</a>
-    </li>
-    <li class="row justify-center">
-      <a href="#" class="conten-center">bully</a>
-    </li>
-    <li class="row justify-center">
-      <a href="#" class="conten-center">bully</a>
-    </li>
-  </ul>
-</div>
+<app-photobox-nav>
 
-<div style="height:100vh;width: 100vh; z-index: -1;position: relative;top:0;left: 0;"></div>
--->
-<div class="container-fluid">
-  <div class="row">
-    <div class="slider" style="
-    background-image: url('./assets/images/swift-sunglass.jpg');">
-    </div>
-  </div>
-  <div class="row">
-    <div class="photo-grid-container">
-      <div class="photo-square photo-grid-box">
-        <div class="photo-container" style="
-        background-image: url('./assets/images/shoe1.jpg');">
-        </div>
-        <div class="photo-container-overlay">
-            <i class="far fa-eye photo-view-icon"></i>
+
+    <div class="container-fluid">
+        <div class="row">
+
+          <div class="container-fluid photobox-banner">
+              <div class="row">
+                  <div class="slider-container-wrapper container-fluid">
+                    <div class="slider-box">
+                      <div id="slider-container">
+                          <div class="slider" style="background-image:url('./assets/images/bg-about-me.jpg')">1</div>
+                          <div class="slider" style="background-image:url('./assets/images/hublot1.jpg')">2</div>
+                          <div class="slider" style="background-image:url('./assets/images/Watch.jpg')">3</div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="row dot-wrapper">
+                  <div class="container-fluid slider-bubble">
+                      <div class="row justify-content-center">
+                          <span class="dot active align-self-center" (click)="slider.currentSlide(0)"></span>
+                          <span class="dot" (click)="slider.currentSlide(1)"></span>
+                          <span class="dot" (click)="slider.currentSlide(2)"></span>
+                      </div>
+                  </div>
+              </div>
+          </div>
         </div>
       </div>
+      <div class="container-fluid photobox-container">
+        <div class="row">
+          <div class="photo-grid-container">
+            <div class="photo-square photo-grid-box">
+              <div class="photo-container" style="
+              background-image: url('./assets/images/bg-about-me.jpg');">
+              </div>
+              <!-- <div class="photo-container-overlay">
+                  <i class="far fa-eye photo-view-icon"></i>
+              </div> -->
+            </div>
 
-      <div class="photo-square photo-grid-box">
-        <div class="photo-container" style="
-        background-image: url('./assets/images/sunglass1.jpg');">
+            <div class="photo-square photo-grid-box">
+              <div class="photo-container" style="
+              background-image: url('./assets/images/bg-about-me.jpg');">
+              </div>
+              <!-- <div class="photo-container-overlay">
+                <i class="far fa-eye photo-view-icon"></i>
+              </div> -->
+            </div>
+
+            <div class="photo-tall photo-grid-box">
+              <div class="photo-container" style="
+              background-image: url('./assets/images/bg-about-me.jpg');">
+              </div>
+              <!-- <div class="photo-container-overlay">
+                <i class="far fa-eye photo-view-icon"></i>
+              </div> -->
+            </div>
+
+            <div class="photo-wide photo-grid-box">
+              <div class="photo-container" style="
+              background-image: url('./assets/images/bg-about-me.jpg');">
+              </div>
+              <!-- <div class="photo-container-overlay">
+                <i class="far fa-eye photo-view-icon"></i>
+              </div> -->
+            </div>
+
+            <div class="photo-fat photo-grid-box">
+              <div class="photo-container" style="
+              background-image: url('./assets/images/bg-about-me.jpg');">
+              </div>
+              <!-- <div class="photo-container-overlay">
+                <i class="far fa-eye photo-view-icon"></i>
+              </div> -->
+            </div>
+
+            <div class="photo-medium photo-grid-box">
+              <div class="photo-container" style="
+              background-image: url('./assets/images/bg-about-me.jpg');">
+              </div>
+              <!-- <div class="photo-container-overlay">
+                <i class="far fa-eye photo-view-icon"></i>
+              </div> -->
+            </div>
+
+            <div class="photo-medium photo-grid-box">
+              <div class="photo-container" style="
+              background-image: url('./assets/images/bg-about-me.jpg');">
+              </div>
+              <!-- <div class="photo-container-overlay">
+                <i class="far fa-eye photo-view-icon"></i>
+              </div> -->
+            </div>
+
+          </div>
         </div>
-        <div class="photo-container-overlay">
-          <i class="far fa-eye photo-view-icon"></i>
-        </div>
+
       </div>
-
-      <div class="photo-tall photo-grid-box">
-        <div class="photo-container" style="
-        background-image: url('./assets/images/DSC_4948.jpg');">
-        </div>
-        <div class="photo-container-overlay">
-          <i class="far fa-eye photo-view-icon"></i>
-        </div>
+      <div class="container-fluid">
+        <mat-paginator class="row" [length]="length"
+                      [pageSize]="pageSize"
+                      [pageSizeOptions]="pageSizeOptions"
+                      [hidePageSize]="true"
+                      (page)="pageEvent = $event">
+        </mat-paginator>
+        <!-- <ul class="pagination">
+          <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+          <li class="active"><a href="#!">1</a></li>
+          <li class="waves-effect"><a href="#!">2</a></li>
+          <li class="waves-effect"><a href="#!">3</a></li>
+          <li class="waves-effect"><a href="#!">4</a></li>
+          <li class="waves-effect"><a href="#!">5</a></li>
+          <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+        </ul> -->
       </div>
-
-      <div class="photo-wide photo-grid-box">
-        <div class="photo-container" style="
-        background-image: url('./assets/images/DSC_9604.jpg');">
-        </div>
-        <div class="photo-container-overlay">
-          <i class="far fa-eye photo-view-icon"></i>
-        </div>
-      </div>
-
-      <div class="photo-fat photo-grid-box">
-        <div class="photo-container" style="
-        background-image: url('./assets/images/DSC_9702.jpg');">
-        </div>
-        <div class="photo-container-overlay">
-          <i class="far fa-eye photo-view-icon"></i>
-        </div>
-      </div>
-
-      <div class="photo-medium photo-grid-box">
-        <div class="photo-container" style="
-        background-image: url('./assets/images/DSC_9777.jpg');">
-        </div>
-        <div class="photo-container-overlay">
-          <i class="far fa-eye photo-view-icon"></i>
-        </div>
-      </div>
-
-      <div class="photo-medium photo-grid-box">
-        <div class="photo-container" style="
-        background-image: url('./assets/images/DSC_9749.jpg');">
-        </div>
-        <div class="photo-container-overlay">
-          <i class="far fa-eye photo-view-icon"></i>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</div>
-
-
+      <app-footer></app-footer>
+    </app-photobox-nav>
